@@ -24,8 +24,12 @@ window.cast = {
 
   "toBool": (val) => {
 
-    if (typeof val !== "number") {
-      val = toNumber(val);
+    if (typeof val === "string") {
+      val = cast.toNumber(val);
+    }
+
+    if (typeof val === "object") {
+      val = val.length;
     }
 
     return Boolean(val);
