@@ -5,7 +5,7 @@ window.cast = {
   "toNumber": (val) => {
     let num = Number(val);
 
-    return isFinite(num) ? 0 : num;
+    return isFinite(num) ? num : 0;
   },
 
   "toString": (val) => {
