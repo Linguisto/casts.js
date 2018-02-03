@@ -5,7 +5,7 @@ window.cast = {
   "toNumber": (val) => {
     let num = Number(val);
 
-    return isNaN(num) ? 0 : num;
+    return isFinite(num) ? 0 : num;
   },
 
   "toString": (val) => {
@@ -14,7 +14,7 @@ window.cast = {
 
   "toBool": (val) => {
 
-    if (typeof val !== 'number') {
+    if (typeof val !== "number") {
       val = toNumber(val);
     }
 
