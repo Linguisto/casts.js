@@ -1,20 +1,24 @@
 "use strict";
 
-window.prototype.toNumber = (val) => {
-  let num = Number(val);
+window.cast = {
 
-  return isNaN(num) ? 0 : num;
-};
+  "toNumber": (val) => {
+    let num = Number(val);
 
-window.prototype.toString = (val) => {
-  return String(val);
-};
+    return isNaN(num) ? 0 : num;
+  },
 
-window.prototype.toBool = (val) => {
+  "toString": (val) => {
+    return String(val);
+  },
 
-  if (typeof val !== 'number') {
-    val = toNumber(val);
+  "toBool": (val) => {
+
+    if (typeof val !== 'number') {
+      val = toNumber(val);
+    }
+
+    return Boolean(val);
   }
-
-  return Boolean(val);
+  
 };
