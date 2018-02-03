@@ -8,6 +8,14 @@ window.cast = {
     return isFinite(num) ? num : 0;
   },
 
+  "toInt": (val) => {
+  	return parseInt(this.toNumber(val));
+  },
+
+  "toFloat": (val) => {
+    return this.toNumber(val);
+  },
+
   "toString": (val) => {
     return String(val);
   },
