@@ -9,11 +9,13 @@ window.cast = {
   },
 
   "toInt": (val) => {
-  	return parseInt(this.toNumber(val));
+    return parseInt(cast.toNumber(val));
   },
 
-  "toFloat": (val) => {
-    return this.toNumber(val);
+  "toFloat": (val, precision = null) => {
+    let result = cast.toNumber(val);
+
+    return precision ? result.toFixed(precision) : result;
   },
 
   "toString": (val) => {
@@ -28,5 +30,5 @@ window.cast = {
 
     return Boolean(val);
   }
-  
+
 };
