@@ -1,0 +1,23 @@
+{
+  "name": "casts.js",
+  "version": "1.0.0",
+  "description": "Cast functions for primitives in JavaScript",
+  "main": "src/casts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Linguisto/casts.js.git"
+  },
+  "keywords": [
+    "js",
+    "casts"
+  ],
+  "author": "Linguisto Esteras <linguisto13@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Linguisto/casts.js/issues"
+  },
+  "homepage": "https://github.com/Linguisto/casts.js#readme"
+}
